@@ -16,8 +16,8 @@ app.use(express.json());
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URL)
-  .then(() => console.log('✅ MongoDB connected'))
-  .catch((err) => console.error('❌ MongoDB error:', err));
+  .then(() => console.log('MongoDB connected'))
+  .catch((err) => console.error(' MongoDB error:', err));
 
 // Mongoose Schema
 const ClickSchema = new mongoose.Schema({
